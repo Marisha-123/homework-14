@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Verti</title>
@@ -18,16 +19,27 @@
                     <a href="#">Verti</a>
                     <span>by HTML5 UP</span>
                 </div>
-                <nav class="navigation">
+                <nav>
                     <ul class="nav">
-                        <li class="nav__item"><a href="index.html" class="nav__link">Welcome</a></li>
+                        <li class="nav__item active"><a href="index.html" class="nav__link">Welcome</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Dropdown</a>
-                            <ul class="sub-nav">
-                                <li class="sub-nav___item"><a href="#" class="sub-nav__link">Lorem ipsum dolor </a></li>
-                                <li class="sub-nav___item"><a href="#" class="sub-nav__link">Magna phasellus</a></li>
-                                <li class="sub-nav___item"><a href="#" class="sub-nav__link">Phasellus consequant</a>
+                            <ul class="subnav">
+                                <li class="subnav__item"><a href="#" class="subnav__link">Lorem ipsum dolor </a></li>
+                                <li class="subnav__item"><a href="#" class="subnav__link">Magna phasellus</a></li>
+                                <li class="subnav__item opener"><a href="#" class="subnav__link">Phasellus
+                                        consequant</a>
+                                    <ul class="subnav-side">
+                                        <li class="subnav-side__item"><a href="#" class="subnav-side__link">Lorem ipsum
+                                                dolor</a></li>
+                                        <li class="subnav-side__item"><a href="#" class="subnav-side__link">Phasellus
+                                                consequat</a></li>
+                                        <li class="subnav-side__item"><a href="#" class="subnav-side__link">Magna
+                                                phasellus</a></li>
+                                        <li class="subnav-side__item"><a href="#" class="subnav-side__link">Etiam dolore
+                                                nisl</a></li>
+                                    </ul>
                                 </li>
-                                <li class="sub-nav___item"><a href="#" class="sub-nav__link">Veroeros feugiat</a></li>
+                                <li class="subnav__item"><a href="#" class="subnav__link">Veroeros feugiat</a></li>
                             </ul>
                         </li>
                         <li class="nav__item"><a href="#" class="nav__link">Left Sidebar</a></li>

@@ -1,5 +1,6 @@
 body {
     background-color: #e8e8e8;
+    font-family: 'Khula', sans-serif;
 }
 .container {
     width: 85%;
@@ -9,7 +10,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 .logo {
     width: 30%;
@@ -26,6 +27,7 @@ body {
     padding: 0 10px;
     margin-right: 10px;
 }
+
 .logo span,
 .nav__link,
 .subnav__link,
@@ -122,4 +124,73 @@ body {
 .opener:hover .subnav-side {
     display: block;
     z-index: 2;
+}
+
+/* banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;  
+    border-radius: 6px;  
+    margin-top: 30px;
+}
+/* banner-leftside */
+.banner-leftside {
+    width: 50%;
+    padding: 80px 0 80px 80px;
+}
+.banner-leftside h1 {
+    color: #444444;
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+.banner-leftside p {
+    font-size: 2.5rem;
+    font-weight: 200;
+    line-height: 3rem;
+    color: #696969;
+    margin-top: 20px;
+}
+
+/* banner-rightside */
+.banner-rightside{
+   width: 38%;
+    text-align: left center;
+}
+.batton_color {
+    display: inline-block;
+    margin-top: 60px;
+    background-color: #0090c5;
+    border-radius: 6px;
+    padding: 30px;
+
+}
+.banner-batton_color {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.fa-arrow-circle-right {
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 80px;
+}
+.batton_gray {
+    display: inline-block;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    padding: 30px;
+    margin-top: 20px;
+}
+.banner-batton_gray{
+    text-decoration: none;
+    color: #444444;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.fa-question-circle {
+    font-size: 1.8rem;
+    margin-left: 102px;
+    color: #444444;
 }

@@ -130,7 +130,8 @@ body {
 .banner {
     display: flex;
     justify-content: space-between;
-    background-color: white;  
+    background-color: white; 
+    box-shadow: rgba(0, 0, 0, 0.15) 0 1.95px 2.6px;     
     border-radius: 6px;  
     margin-top: 30px;
 }
@@ -154,7 +155,7 @@ body {
 
 /* banner-rightside */
 .banner-rightside{
-   width: 38%;
+     width: 38%;
     text-align: left center;
 }
 .batton_color {
@@ -193,4 +194,127 @@ body {
     font-size: 1.8rem;
     margin-left: 102px;
     color: #444444;
+}
+
+/* block-card */
+
+.block-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.card {
+    width: 384px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 1.95px 2.6px;
+}
+.card img {
+    border-radius: 6px 6px 0 0;
+}
+.card h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #444;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.card-desc,
+.card-subtitle {
+    color: #696969;
+    font-weight: 300;
+    margin-left: 30px;
+}
+.card-subtitle {
+    margin-top: 20px;
+}
+.card-desc {
+    margin-top: 50px;
+    line-height: 2.25rem;
+    margin-bottom: 30px;
+}
+
+/* about */
+.about {
+    background-color: white;
+    margin-top: 50px;
+}
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+.about-imgside{
+    width: 100%;
+}
+.about-imgside h2 {
+    font-size: 1.3rem;
+    letter-spacing: .05rem;
+    font-weight: 800;
+    color: #444;
+    margin-top: 90px;
+}
+.img-block  img{
+    width: 40%;
+    border-radius: 10px;
+    margin: 20px 18px 6px 0 ;
+}
+.img-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.batton-more {
+    display: inline-block;
+    background-color: #0090c5;
+    padding: 23px 30px 15px 30px;
+    border-radius: 6px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.batton-more a,
+.batton-about a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.batton-more i {
+    color:white;
+    margin-right: 10px;
+}
+
+.about-descside h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #444;
+    margin-top: 90px;
+}
+.about-descside span{
+    font-weight: 700;
+}
+.about-descside  p {
+    margin-top: 30px;
+    color: #696969;
+    font-weight: 300;
+    line-height: 2.25rem;
+}
+.about-descside a {
+    color: #0090c5;
+    text-decoration: underline;
+}
+.batton-about {
+    display: inline-block;
+    background-color: #0090c5;
+    padding: 20px 25px 15px;
+    border-radius: 6px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.batton-about i {
+    margin-left: 0;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+.batton-about a {
+    text-decoration: none;
+    color: white;
 }

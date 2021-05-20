@@ -187,10 +187,13 @@ input {
     font-size: 2rem;
     font-weight: 800;
 }
+.banner-batton_color::before {
+    content: 'Ok let s go';
+}
 .fa-arrow-circle-right {
     color: white;
     font-size: 1.8rem;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 .batton_gray {
     background-color: #f2f2f2;
@@ -202,9 +205,12 @@ input {
     font-size: 2rem;
     font-weight: 800;
 }
+.banner-batton_gray::before {
+    content: 'More info';
+}
 .fa-question-circle {
     font-size: 1.8rem;
-    margin-left: 102px;
+    margin-left: 67px;
     color: #444444;
 }
 
@@ -427,11 +433,15 @@ input {
     .logo {
         width: 35%;
     }
-    .fa-arrow-circle-right {
-        margin-left: 30px;
+    .banner-batton_color::before,
+    .banner-batton_gray::before {
+        content: '';
     }
-    .fa-question-circle {
-        margin-left: 60px;
+    .banner-batton_color::after {
+        content: 'Ok let s go';
+    }
+    .banner-batton_gray::after {
+    content: 'More info';
     }
     .footer a {
     font-size: .9rem;
@@ -509,20 +519,17 @@ input {
         width: 90%;
         margin: 0 auto;
     }
+    .banner-batton_color::before,
+    .banner-batton_gray::before {
+        content: '';
+    }
+    .banner-batton_color::after {
+        content: 'Ok let s go';
+    }
+    .banner-batton_gray::after {
+    content: 'More info';
+    }
 
-    .banner-batton_color ,
-    .batton_gray {
-        position: relative;
-    }
-    .fa-arrow-circle-right{
-        position: absolute;
-        left: 31%; 
-    }
-    .fa-question-circle {
-        position: absolute;
-        top: 24%;
-        left: 24%; 
-    }
 
     /* block-card */
 
@@ -569,16 +576,6 @@ input {
         display: inline-block;
         width: 100%;
         text-align: center;
-        position: relative;
-    }
-    .batton-about i {
-        position: absolute;
-        top: 30%;
-        left: 33%;
-    }
-    .batton-about a {
-        text-decoration: none;
-        color: white;
     }
 
     /* footer */
@@ -602,29 +599,68 @@ input {
     }
 }
 
-/* @media screen and (max-width: 768px){
-      .banner-batton_color ,
-    .batton_gray {
-        position: relative;
+@media screen and (max-width: 738px){
+    .logo a  {
+        font-size: 2rem;
     }
-    .fa-arrow-circle-right{
-        position: absolute;
-        left: 27%; 
+    .banner-leftside {
+    padding: 30px 0 0 0;
+    }
+    .banner-batton_color::before,
+    .banner-batton_gray::before {
+        content: '';
+    }
+    .banner-batton_color::after {
+        content: 'Ok let s go';
+    }
+    .banner-batton_gray::after {
+        content: 'More info';
+    }
+
+    .batton {
+        display: inline-block;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .banner-leftside h1 {
+        color: #444444;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    .banner-leftside p {
+        font-size: 1.4rem;
+    }
+    .batton_color {
+        background-color: #0090c5;  
+    }
+    .banner-batton_color {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+    .fa-arrow-circle-right {
+        color: white;
+        font-size: 1.2rem;
+    }
+    .banner-batton_gray{
+        font-size: 1.2rem;
     }
     .fa-question-circle {
-        position: absolute;
-        top: 24%;
-        left: 18%; 
+        font-size: 1.2rem;
     }
-    .batton-about {
-        display: inline-block;
+    .img-block img{
+        width: 46%;
+    }
+    .social-block {
+        margin-left: 110px;
+    }
+    .footer-block {
         width: 100%;
         text-align: center;
-        position: relative;
     }
-    .batton-about i {
-        position: absolute;
-        top: 30%;
-        left: 26%;
-    }
-} */
+    .footer-top h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+}

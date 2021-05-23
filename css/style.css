@@ -460,9 +460,6 @@ input {
     .container {
         width: 90%;
     }
-    .nav {
-        display: none;
-    }
     .header {
         margin-top: 60px;
     }
@@ -471,6 +468,7 @@ input {
         align-items: center;
         width: 15%;
         margin: 0 auto;
+
     }
     .logo a  {
         padding: 0 10px;
@@ -478,12 +476,23 @@ input {
         margin-right: 0;
     }
     .logo p{
-    margin-top: 30px;
-    text-align: center;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .nav {
+        display: none;
+    }
+    
+    #toggle {
+        display: block;
+        position: absolute;
+        opacity: 1;
+        top: 10px;
+        left: 30px;
     }
     .navigation i,
-     .toggle :before {
-        display: inline-block;
+    #toggle:before {
+        display: block;
         content: '';
         cursor: pointer;
         position: absolute;
@@ -491,16 +500,53 @@ input {
         top: 6px;
         background: #c0c0c0;
         width: 58px;
-        height: 38px;
         border-radius: 6px;
-        font-size: 100% 100%;
         color: #fff;
         text-align: center;
         line-height: 38px;
         font-size: 20px;
         position: fixed;
     }
-
+    #toggle:checked~ .nav{
+        display: block;
+        opacity: 1;
+    }
+     .nav {
+        width: 300px;
+        position: absolute;
+        left: 48px;
+        top: 20px;
+    }
+    .nav__item {
+        display: block;
+        background-color: white; 
+        border: 1px solid #e8e8e8;
+        padding: 12px 12px 14px 14px;
+    } 
+    .nav__link {
+        font-size: .9rem;
+        font-weight: 800;
+        color: #292828;
+        text-decoration: none;
+        cursor: pointer;
+    }
+   
+    .subnav {
+        display: block;
+        position: absolute;
+        top: -2%;
+        left: 101%;
+        display: none;
+    } 
+    .subnav::before {
+        display: none;
+    }
+    .active {
+        background-color: white;
+        
+    }
+    
+    
     .banner {
         display: block;
         text-align: center;
